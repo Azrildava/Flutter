@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
-
 import 'package:get/get.dart';
-
 import '../controllers/home_controller.dart';
-import 'package:lottie/lottie.dart';
 import 'package:hexcolor/hexcolor.dart';
+import 'package:lottie/lottie.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class HomeView extends GetView<HomeController> {
-  const HomeView({super.key});
+  const HomeView({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     HomeController controller = Get.put(HomeController());
